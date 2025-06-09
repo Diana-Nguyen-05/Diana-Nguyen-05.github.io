@@ -3,9 +3,9 @@
 import React from 'react';
 import './IntroScreen.css';
 
-function IntroScreen() {
+function IntroScreen({ onStart }) {
     return(
-        <div className="IntroScreenContainer">
+        <div className="IntroScreenContainer" onClick={ onStart }>
             <p className="IntroScreenText">Press anywhere to start . . .</p>
         </div>
     );
