@@ -1,0 +1,14 @@
+
+.IntroScreenContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /*Add bg here later*/
+}
+
+.IntroScreenText {
+    font-size: 3em;
+    color: white;
+}
