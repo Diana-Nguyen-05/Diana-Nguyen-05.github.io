@@ -1,0 +1,50 @@
+
+.LoadingScreenContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    /*add bg image here later*/
+}
+
+.LoadingBarContainer {
+    width: 350px;
+    height: 25px;
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden; /*so fill doesnt go out of borders*/
+}
+
+.LoadingBarFill {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(146, 145, 145);
+    animation: fillBar 2s ease forwards;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.LoadingScreenText {
+    margin-bottom: 0;
+    font-size: 1em;
+    animation: pulseText 0.5s infinite alternate;
+}
+
+@keyframes pulseText {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
