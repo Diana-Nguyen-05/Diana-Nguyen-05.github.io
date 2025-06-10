@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 // import files
 import IntroScreen from './components/IntroScreen/IntroScreen';
+import MainScreen from "./components/MainScreen/MainScreen";
 import './App.css'
 
 function App() {
@@ -17,8 +18,8 @@ function App() {
   return(
     <>
       {showIntro ? (
-      <IntroScreen onStart={ handleStart } /> ):(
-      <div></div>
+      <IntroScreen onStart={ handleStart } /> ):( // show intro screen
+      <MainScreen />
       )}
     </>
   );
