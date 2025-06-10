@@ -1,0 +1,31 @@
+
+
+.MainScreenContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*Add bg image here later*/
+}
+
+.MainTextContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.MainText {
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    margin-bottom: -0.65em;
+    margin-top: 0;
+}
+
+.Quote {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 0;
+    margin-top: -10;
+}
