@@ -64,6 +64,7 @@
 }
 .InventorySlot:hover {
     background-color: rgb(100, 100, 100);
+    font-size: 1.35em;
 }
 
 .resumeSlot {
