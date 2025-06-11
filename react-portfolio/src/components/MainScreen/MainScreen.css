@@ -33,6 +33,13 @@
     margin-top: -10;
 }
 
+.HomeButtonContainer {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+}
+
 .InventoryBarContainer {
     width: 45%;
     height: 100px;

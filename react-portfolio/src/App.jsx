@@ -31,17 +31,24 @@ function App() {
   const handleToggleResume = () => {
     setShowResume(prev => !prev);
   }
+
+  // Home button
+  const handleGoHome = () => {
+    setShowIntro(true);
+    setShowResume(false);
+  }
   
   return(
     <>
       {showIntro ? (
         <IntroScreen onStart={ handleStart } /> 
-      ) : loading? ( // loading screen if not intro
+      ) : loading ? ( // loading screen if not intro
         <LoadingScreen />
       ) : ( // main screen if neither
         <MainScreen 
-          onToggleResume={handleToggleResume} 
-          isResumeActive={showResume}
+          onToggleResume={ handleToggleResume } 
+          isResumeActive={ showResume }
+          onGoHome={ handleGoHome }
         />
       )}
 

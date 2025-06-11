@@ -3,7 +3,9 @@
 import React from 'react';
 import './MainScreen.css';
 
-function MainScreen({ onToggleResume, isResumeActive }) {
+import HomeButton from '../Home/Home';
+
+function MainScreen({ onToggleResume, isResumeActive, onGoHome }) {
 
     const inventorySlots = [
         {type: 'resume', content: 'Resume'},
@@ -20,6 +22,10 @@ function MainScreen({ onToggleResume, isResumeActive }) {
 
     return (
         <div className="MainScreenContainer">
+
+            <div className="HomeButtonContainer">
+                <HomeButton onClick={onGoHome} />
+            </div>
 
             <div className="TopSpacer"></div>
 
