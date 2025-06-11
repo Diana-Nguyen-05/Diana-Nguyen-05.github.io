@@ -3,7 +3,7 @@
 import React from 'react';
 import './MainScreen.css';
 
-function MainScreen() {
+function MainScreen({ onToggleResume, isResumeActive }) {
 
     const inventorySlots = [
         {type: 'resume', content: 'Resume'},
@@ -30,7 +30,11 @@ function MainScreen() {
 
             <div className="InventoryBarContainer">
                 {inventorySlots.map((slot, index) => (
-                    <div key={index} className={`InventorySlot ${slot.type == 'resume' ? 'resumeSlot' : ''}`}>
+                    <div
+                        key={index} 
+                        className={`InventorySlot ${slot.type == 'resume' ? 'resumeSlot' : ''} ${slot.type == 'resume' && isResumeActive ? 'ActiveSlot' : ''}`}
+                        onClick={slot.type=='resume' ? onToggleResume : null}
+                    >
                         {slot.content && (
                             <span className="slotContent">
                                 {slot.content}
