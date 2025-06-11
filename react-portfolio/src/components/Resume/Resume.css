@@ -14,7 +14,7 @@
 
 .ResumeContent {
     position: relative;
-    background-color: gray;
+    background-color: rgb(71, 71, 71);
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 10px black;
@@ -41,6 +41,11 @@
 }
 
 .ResumeDownloadButton {
-    color: rgb(116, 194, 247);
-    margin-top: 12px;
+    color: white;
+    margin-top: 10px;
+    padding: 2px 10px;
+    border-radius: 8px;
+    background-color: gray;
+    font-size: 1.3em;
+    transition: background-colour 0.2s ease;
 }
