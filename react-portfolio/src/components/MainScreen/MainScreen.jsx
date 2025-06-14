@@ -30,7 +30,7 @@ function MainScreen({ onToggleResume, isResumeActive, onGoHome }) {
             <div className="TopSpacer"></div>
 
             <div className="MainTextContainer">
-                <h1 className="MainText">Hello, my name is Diana!</h1>
+                <h1 className="MainText">Hello, my name is <span className="Name">Diana</span>!</h1>
                 <p className="Quote">Making play a profession.</p>
             </div>
 
