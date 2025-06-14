@@ -2,6 +2,7 @@
 .MainScreenContainer {
     width: 100vw;
     height: 100vh;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,6 +48,13 @@
     position: absolute;
     top: 50px;
     left: 50px;
+    z-index: 10;
+}
+
+.SocialsButtonContainer {
+    position: absolute;
+    top: 50px;
+    right: 50px;
     z-index: 10;
 }
 

@@ -4,6 +4,7 @@ import React from 'react';
 import './MainScreen.css';
 
 import HomeButton from '../Home/Home';
+import SocialsButton from '../Socials/Socials';
 
 function MainScreen({ onToggleResume, isResumeActive, onGoHome }) {
 
@@ -25,6 +26,10 @@ function MainScreen({ onToggleResume, isResumeActive, onGoHome }) {
 
             <div className="HomeButtonContainer">
                 <HomeButton onClick={onGoHome} />
+            </div>
+
+            <div className="SocialsButtonContainer">
+                <SocialsButton onClick={() => console.log('Socials clicked')} />
             </div>
 
             <div className="TopSpacer"></div>
