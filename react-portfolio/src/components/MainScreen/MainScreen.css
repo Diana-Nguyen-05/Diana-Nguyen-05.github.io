@@ -25,12 +25,7 @@
     text-align: center;
     margin-bottom: -0.65em;
     margin-top: 0;
-
-    text-shadow: 
-        -1px -1px 0 black
-        -1px 1px 0 black
-        1px -1px 0 black
-        1px 1px 0 black;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
 .Name {
@@ -63,6 +58,12 @@
     top: 50px;
     right: 165px;
     z-index: 10;
+}
+
+.SkillsButtonContainer {
+    position: absolute;
+    bottom: 195px;
+    left: 425px;
 }
 
 .InventoryBarContainer {

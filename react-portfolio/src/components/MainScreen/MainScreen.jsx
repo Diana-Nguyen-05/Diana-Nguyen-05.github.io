@@ -6,6 +6,7 @@ import './MainScreen.css';
 import HomeButton from '../Home/Home';
 import SocialsButton from '../Socials/Socials';
 import AboutMeButton from '../AboutMe/AboutMe';
+import SkillsButton from '../Skills/Skills';
 
 function MainScreen({ onToggleResume, isResumeActive, onGoHome }) {
 
@@ -35,6 +36,10 @@ function MainScreen({ onToggleResume, isResumeActive, onGoHome }) {
 
             <div className="AboutMeButtonContainer">
                 <AboutMeButton onClick={() => console.log('About me clicked')} />
+            </div>
+
+            <div className="SkillsButtonContainer">
+                <SkillsButton onClick={() => console.log('Skills clicked')} />
             </div>
 
             <div className="TopSpacer"></div>
