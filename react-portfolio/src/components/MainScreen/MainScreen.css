@@ -66,6 +66,12 @@
     left: 425px;
 }
 
+.ProjectsButtonContainer {
+    position: absolute;
+    bottom: 195px;
+    right: 425px;
+}
+
 .InventoryBarContainer {
     width: 45%;
     height: 100px;
