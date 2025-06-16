@@ -8,7 +8,7 @@ import SocialsButton from '../Socials/Socials';
 import AboutMeButton from '../AboutMe/AboutMe';
 import SkillsButton from '../Skills/Skills';
 
-function MainScreen({ onToggleResume, isResumeActive, onGoHome }) {
+function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, isSkillsActive }) {
 
     const inventorySlots = [
         {type: 'resume', content: 'Resume'},
@@ -39,7 +39,7 @@ function MainScreen({ onToggleResume, isResumeActive, onGoHome }) {
             </div>
 
             <div className="SkillsButtonContainer">
-                <SkillsButton onClick={() => console.log('Skills clicked')} />
+                <SkillsButton onClick={ onToggleSkills } isActive={ isSkillsActive} />
             </div>
 
             <div className="TopSpacer"></div>

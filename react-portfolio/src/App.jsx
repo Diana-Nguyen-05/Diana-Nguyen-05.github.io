@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 
 // import files
+import './App.css'
 import IntroScreen from './components/IntroScreen/IntroScreen';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
-import MainScreen from "./components/MainScreen/MainScreen";
-import Resume from "./components/Resume/Resume";
-import './App.css'
+import MainScreen from './components/MainScreen/MainScreen';
+
+import Resume from './sections/Resume/Resume';
+import SkillsOverlay from './sections/SkillsOverlay/SkillsOverlay';
+
+import SkillsData from './data/Skills';
 
 function App() {
 
@@ -15,6 +19,8 @@ function App() {
   const [loading, setLoading] = useState(false);
   // useState to control Resume pop up
   const [showResume, setShowResume] = useState(false);
+  // useState to control Skills pop up
+  const [showSkills, setShowSkills] = useState(false);
 
   // setShowIntro function
   const handleStart = () => {
@@ -37,6 +43,12 @@ function App() {
     setShowIntro(true);
     setShowResume(false);
   }
+
+  // open and close Skills
+  const handleToggleSkills = () => {
+    if (showResume) { setShowResume(false) };
+    setShowSkills(prev => !prev);
+  }
   
   return(
     <>
@@ -49,11 +61,16 @@ function App() {
           onToggleResume={ handleToggleResume } 
           isResumeActive={ showResume }
           onGoHome={ handleGoHome }
+          onToggleSkills={ handleToggleSkills }
+          isSkillsActive={ showSkills }
         />
       )}
 
       {/*Resume pop up*/}
       {showResume && (<Resume resumePDFPath="/ResumePlaceholder.pdf" />)}
+
+      {/*Skills pop up*/}
+      {showSkills && (<SkillsOverlay skills={ SkillsData } onClose={ handleToggleSkills } />)}
     </>
   );
 }
