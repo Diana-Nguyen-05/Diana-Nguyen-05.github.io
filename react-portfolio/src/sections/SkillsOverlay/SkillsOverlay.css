@@ -1,0 +1,84 @@
+
+
+.SkillsOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.SkillsOverlayContent {
+    position: relative;
+    background-color: rgb(71, 71, 71);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 45vw;
+    height: 55vh;
+    max-width: 80%;
+    max-height: 90%;
+    transform: translateY(-6.5%);
+
+    pointer-events: auto;
+    box-sizing: border-box;
+}
+
+.SkillsOverlayContent h2 {
+    font-size: 2.5em;
+    margin-top: -10px;
+    color: rgb(143, 236, 143);
+}
+
+.SkillsGrid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.SkillsCategory {
+    flex: 1;
+    min-width: 190px;
+    min-height: 350px;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 25px 15px;
+    margin-top: -50px;
+}
+
+.SkillsCategory h3 {
+    font-size: 1.7em;
+    color: rgb(117, 205, 231);
+    margin-top: 1px;
+    text-align: center;
+}
+
+.SkillsCategory ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.SkillName {
+    font-size: 1.7em;
+}
+
+.SkillIcon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    padding-right: 10px;
+    transform: translateY(18px);
+}
