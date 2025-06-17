@@ -9,7 +9,7 @@ import AboutMeButton from '../AboutMe/AboutMe';
 import SkillsButton from '../Skills/Skills';
 import ProjectsButton from '../Projects/Projects';
 
-function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, isSkillsActive, onToggleAboutMe, isAboutMeActive }) {
+function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, isSkillsActive, onToggleAboutMe, isAboutMeActive, onToggleSocials, isSocialsActive }) {
 
     const inventorySlots = [
         {type: 'resume', content: 'Resume'},
@@ -32,7 +32,7 @@ function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, 
             </div>
 
             <div className="SocialsButtonContainer">
-                <SocialsButton onClick={() => console.log('Socials clicked') } />
+                <SocialsButton onClick={ onToggleSocials } isActive={ isSocialsActive } />
             </div>
 
             <div className="AboutMeButtonContainer">

@@ -1,0 +1,57 @@
+
+.SocialsOverlay {
+    position: fixed;
+    top: 105px;
+    right: 51px;
+    width: 15vw;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.SocialsOverlayContent {
+    position: relative;
+    background-color: rgb(71, 71, 71);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 15vw;
+    height: 9vh;
+
+    pointer-events: auto;
+    box-sizing: border-box;
+}
+
+.SocialsOverlayContent p {
+    font-size: 1.3em;
+    margin-bottom: 0px;
+    margin-top: -30px;
+}
+
+.SocialsLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.SocialsLinks a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.05em;
+    color: rgb(185, 225, 248);
+}
+
+.SocialIcon {
+    width: 35px;
+    height: auto;
+    object-fit: contain;
+}

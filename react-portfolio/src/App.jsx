@@ -9,6 +9,7 @@ import MainScreen from './components/MainScreen/MainScreen';
 import Resume from './sections/Resume/Resume';
 import SkillsOverlay from './sections/SkillsOverlay/SkillsOverlay';
 import AboutMeOverlay from './sections/AboutMeOverlay/AboutMeOverlay';
+import SocialsOverlay from './sections/SocialsOverlay/SocialsOverlay';
 
 import SkillsData from './data/Skills';
 
@@ -24,6 +25,8 @@ function App() {
   const [showSkills, setShowSkills] = useState(false);
   // useState to control About Me pop up
   const [showAboutMe, setShowAboutMe] = useState(false);
+  // useState to control My Socials pop up
+  const [showSocials, setShowSocials] = useState(false);
 
   // setShowIntro function
   const handleStart = () => {
@@ -34,7 +37,7 @@ function App() {
     setTimeout(() => {
       setLoading(false);
     }, 2500)
-  }
+  };
 
   // open and close Resume
   const handleToggleResume = () => {
@@ -43,7 +46,7 @@ function App() {
     if (showAboutMe) { setShowAboutMe(false); }
 
     setShowResume(prev => !prev);
-  }
+  };
 
   // Home button
   const handleGoHome = () => {
@@ -51,7 +54,8 @@ function App() {
     setShowResume(false);
     setShowSkills(false);
     setShowAboutMe(false);
-  }
+    setShowSocials(false);
+  };
 
   // open and close Skills
   const handleToggleSkills = () => {
@@ -60,7 +64,7 @@ function App() {
     if (showAboutMe) { setShowAboutMe(false); }
 
     setShowSkills(prev => !prev);
-  }
+  };
 
   // open and close About Me
   const handleToggleAboutMe = () => {
@@ -69,7 +73,11 @@ function App() {
     if (showSkills) { setShowSkills(false); }
 
     setShowAboutMe(prev => !prev);
-  }
+  };
+
+  const handleToggleSocials = () => {
+    setShowSocials(prev => !prev);
+  };
   
   return(
     <>
@@ -86,6 +94,8 @@ function App() {
           isSkillsActive={ showSkills }          
           onToggleAboutMe={ handleToggleAboutMe }
           isAboutMeActive={ showAboutMe }
+          onToggleSocials={ handleToggleSocials }
+          isSocialsActive={ showSocials }
         />
       )}
 
@@ -97,6 +107,9 @@ function App() {
 
       {/*About Me pop up*/}
       {showAboutMe && (<AboutMeOverlay onClose={ handleToggleAboutMe } />)}
+
+      {/*My Socials pop up*/}
+      {showSocials && (<SocialsOverlay onClose={handleToggleSocials} />)}
     </>
   );
 }

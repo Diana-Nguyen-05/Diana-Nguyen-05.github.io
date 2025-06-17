@@ -2,9 +2,9 @@
 import React from 'react';
 import './Socials.css';
 
-function Socials({ onClick }) {
+function Socials({ onClick, isActive }) {
     return(
-        <button className="SocialsButton" onClick={ onClick }>
+        <button className={`SocialsButton ${isActive ? 'ActiveButton' : ''}`} onClick={ onClick }>
             My Socials
         </button>
     );
