@@ -8,6 +8,7 @@ import MainScreen from './components/MainScreen/MainScreen';
 
 import Resume from './sections/Resume/Resume';
 import SkillsOverlay from './sections/SkillsOverlay/SkillsOverlay';
+import AboutMeOverlay from './sections/AboutMeOverlay/AboutMeOverlay';
 
 import SkillsData from './data/Skills';
 
@@ -21,6 +22,8 @@ function App() {
   const [showResume, setShowResume] = useState(false);
   // useState to control Skills pop up
   const [showSkills, setShowSkills] = useState(false);
+  // useState to control About Me pop up
+  const [showAboutMe, setShowAboutMe] = useState(false);
 
   // setShowIntro function
   const handleStart = () => {
@@ -35,6 +38,9 @@ function App() {
 
   // open and close Resume
   const handleToggleResume = () => {
+    // close other pop ups
+    if (showAboutMe) { setShowAboutMe(false); }
+
     setShowResume(prev => !prev);
   }
 
@@ -42,12 +48,26 @@ function App() {
   const handleGoHome = () => {
     setShowIntro(true);
     setShowResume(false);
+    setShowSkills(false);
+    setShowAboutMe(false);
   }
 
   // open and close Skills
   const handleToggleSkills = () => {
-    if (showResume) { setShowResume(false) };
+    // close other pop ups
+    if (showResume) { setShowResume(false); }
+    if (showAboutMe) { setShowAboutMe(false); }
+
     setShowSkills(prev => !prev);
+  }
+
+  // open and close About Me
+  const handleToggleAboutMe = () => {
+    // close other pop ups
+    if (showResume) { setShowResume(false); }
+    if (showSkills) { setShowSkills(false); }
+
+    setShowAboutMe(prev => !prev);
   }
   
   return(
@@ -62,7 +82,9 @@ function App() {
           isResumeActive={ showResume }
           onGoHome={ handleGoHome }
           onToggleSkills={ handleToggleSkills }
-          isSkillsActive={ showSkills }
+          isSkillsActive={ showSkills }          
+          onToggleAboutMe={ handleToggleAboutMe }
+          isAboutMeActive={ showAboutMe }
         />
       )}
 
@@ -71,6 +93,9 @@ function App() {
 
       {/*Skills pop up*/}
       {showSkills && (<SkillsOverlay skills={ SkillsData } onClose={ handleToggleSkills } />)}
+
+      {/*About Me pop up*/}
+      {showAboutMe && (<AboutMeOverlay onClose={ handleToggleAboutMe } />)}
     </>
   );
 }

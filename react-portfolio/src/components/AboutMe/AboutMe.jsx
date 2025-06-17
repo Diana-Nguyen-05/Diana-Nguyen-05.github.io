@@ -2,9 +2,9 @@
 import React from 'react';
 import './AboutMe.css';
 
-function AboutMe({ onClick }) {
+function AboutMe({ onClick, isActive }) {
     return(
-        <button className='AboutMeButton' onClick={ onClick }>
+        <button className={`AboutMeButton ${ isActive ? 'ActiveButton' : ''}`} onClick={ onClick }>
             About Me
         </button>
     );
