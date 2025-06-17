@@ -39,6 +39,7 @@ function App() {
   // open and close Resume
   const handleToggleResume = () => {
     // close other pop ups
+    if (showSkills) { setShowSkills(false); }
     if (showAboutMe) { setShowAboutMe(false); }
 
     setShowResume(prev => !prev);
