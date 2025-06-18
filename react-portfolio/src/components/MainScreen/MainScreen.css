@@ -107,7 +107,7 @@
     font-size: clamp(1.5vh, 1.2vw, 1.2vw);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .hideT {
         display: none;
     }
@@ -116,8 +116,18 @@
         top: 5vh;
         right: 15vw;
     }
+    .SkillsButtonContainer {
+        position: absolute;
+        bottom: 20.5vh;
+        left: 17vw;
+    }
+    .ProjectsButtonContainer {
+        position: absolute;
+        bottom: 20.5vh;
+        right: 17vw;
+    }
 }
-@media (max-width: 480px) {
+@media (max-width: 650px) {
     .hideP {
         display: none;
     }
@@ -125,6 +135,16 @@
         position: absolute;
         top: 5vh;
         right: 18.5vw;
+    }
+    .SkillsButtonContainer {
+        position: absolute;
+        bottom: 20.3vh;
+        left: 15.5vw;
+    }
+    .ProjectsButtonContainer {
+        position: absolute;
+        bottom: 20.3vh;
+        right: 15.5vw;
     }
 }
 
