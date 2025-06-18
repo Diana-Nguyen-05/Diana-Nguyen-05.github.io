@@ -1,0 +1,73 @@
+
+.ProjectCard {
+    background-color: rgb(92, 92, 92);
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.ProjectCard h3 {
+    font-size: 2em;
+    color: rgb(182, 255, 251);
+    margin-top: 0;
+    margin-bottom: -0.05em;
+}
+
+.ProjectImage {
+    max-width: 90%;
+    height: 11em;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: -0.7em;
+}
+
+.ProjectDescription {
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin-bottom: 0.1em;
+    flex-grow: 1;
+}
+
+.ProjectTechnologies h4 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: -0.05em;
+    color: rgb(185, 245, 245);
+}
+
+.ProjectTechnologies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.ProjectTechnologies li {
+    font-size: 1.2em;
+    margin-bottom: -0.5em;
+}
+
+.ProkectLinks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.ProjectLink {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    border: 2px solid black;
+}

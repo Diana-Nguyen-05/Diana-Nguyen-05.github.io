@@ -9,7 +9,7 @@ import AboutMeButton from '../AboutMe/AboutMe';
 import SkillsButton from '../Skills/Skills';
 import ProjectsButton from '../Projects/Projects';
 
-function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, isSkillsActive, onToggleAboutMe, isAboutMeActive, onToggleSocials, isSocialsActive }) {
+function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, isSkillsActive, onToggleAboutMe, isAboutMeActive, onToggleSocials, isSocialsActive, onToggleProjects, isProjectsActive }) {
 
     const inventorySlots = [
         {type: 'resume', content: 'Resume'},
@@ -40,11 +40,11 @@ function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, 
             </div>
 
             <div className="SkillsButtonContainer">
-                <SkillsButton onClick={ onToggleSkills } isActive={ isSkillsActive} />
+                <SkillsButton onClick={ onToggleSkills } isActive={ isSkillsActive } />
             </div>
 
             <div className="ProjectsButtonContainer">
-                <ProjectsButton onClick={() => console.log('Projects clicked')} />
+                <ProjectsButton onClick={ onToggleProjects } isActive={ isProjectsActive } />
             </div>
 
             <div className="TopSpacer"></div>
