@@ -1,0 +1,2 @@
+Sections contains each of the 5 main sections of the website. This refers to 
+my wireframe. (Resume isn't on the wireframe, but it counts too)

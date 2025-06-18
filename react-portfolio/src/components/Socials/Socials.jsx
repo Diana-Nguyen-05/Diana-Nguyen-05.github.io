@@ -1,3 +1,4 @@
+// src/components/Socials/Socials.jsx
 
 import React from 'react';
 import './Socials.css';

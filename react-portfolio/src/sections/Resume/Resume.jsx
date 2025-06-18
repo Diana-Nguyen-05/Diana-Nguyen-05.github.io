@@ -1,3 +1,4 @@
+// src/sections/Resume/Resume.jsx
 
 import React from 'react';
 import './Resume.css';

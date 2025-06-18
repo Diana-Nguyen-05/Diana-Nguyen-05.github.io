@@ -1,3 +1,4 @@
+// src/sections/SocialsOverlay/SocialsOverlay.jsx
 
 import React from 'react';
 import './SocialsOverlay.css';

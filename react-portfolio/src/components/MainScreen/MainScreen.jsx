@@ -11,6 +11,7 @@ import ProjectsButton from '../Projects/Projects';
 
 function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, isSkillsActive, onToggleAboutMe, isAboutMeActive, onToggleSocials, isSocialsActive, onToggleProjects, isProjectsActive }) {
 
+    // Inventory slots
     const inventorySlots = [
         {type: 'resume', content: 'Resume'},
         {type: 'empty'},
@@ -27,6 +28,7 @@ function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, 
     return (
         <div className="MainScreenContainer">
 
+            {/* All buttons */}
             <div className="HomeButtonContainer">
                 <HomeButton onClick={onGoHome} />
             </div>
@@ -49,11 +51,13 @@ function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, 
 
             <div className="TopSpacer"></div>
 
+            {/*Main Text*/}
             <div className="MainTextContainer">
                 <h1 className="MainText">Hello, my name is <span className="Name">Diana</span>!</h1>
                 <p className="Quote">Making play a profession.</p>
             </div>
 
+            {/*Inventory bar*/}
             <div className="InventoryBarContainer">
                 {inventorySlots.map((slot, index) => (
                     <div

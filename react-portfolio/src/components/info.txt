@@ -1,1 +1,1 @@
-Folder holds all reusable parts.
+Folder holds all reusable parts, and also main 'pages' of the site.

@@ -1,36 +1,36 @@
+// import files
 import React, { useState } from 'react';
 
-// import files
+  // my different 'pages'
 import './App.css'
 import IntroScreen from './components/IntroScreen/IntroScreen';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import MainScreen from './components/MainScreen/MainScreen';
 
+  // overlays
 import Resume from './sections/Resume/Resume';
 import SkillsOverlay from './sections/SkillsOverlay/SkillsOverlay';
 import AboutMeOverlay from './sections/AboutMeOverlay/AboutMeOverlay';
 import SocialsOverlay from './sections/SocialsOverlay/SocialsOverlay';
 import ProjectsOverlay from './sections/ProjectsOverlay/ProjectsOverlay';
 
+  // data
 import SkillsData from './data/Skills';
 import ProjectsData from './data/Projects';
 
+
+
+
 function App() {
 
-  // useState to control intro screen
-  const [showIntro, setShowIntro] = useState(true); // initially set to True
-  // useState to control loading screen
-  const [loading, setLoading] = useState(false);
-  // useState to control Resume pop up
-  const [showResume, setShowResume] = useState(false);
-  // useState to control Skills pop up
-  const [showSkills, setShowSkills] = useState(false);
-  // useState to control About Me pop up
-  const [showAboutMe, setShowAboutMe] = useState(false);
-  // useState to control My Socials pop up
-  const [showSocials, setShowSocials] = useState(false);
-  // useState to control Projects pop up 
-  const [showProjects, setShowProjects] = useState(false);
+  // useStates to control...
+  const [showIntro, setShowIntro] = useState(true); // intro screen
+  const [loading, setLoading] = useState(false); // loading screen
+  const [showResume, setShowResume] = useState(false); // resume pop up
+  const [showSkills, setShowSkills] = useState(false); // skills pop up
+  const [showAboutMe, setShowAboutMe] = useState(false); // about me pop up
+  const [showSocials, setShowSocials] = useState(false); // socials pop up
+  const [showProjects, setShowProjects] = useState(false); // projects pop up
 
   // setShowIntro function
   const handleStart = () => {
@@ -40,7 +40,23 @@ function App() {
     // timer for loading screen
     setTimeout(() => {
       setLoading(false);
-    }, 2500)
+    }, 2500) // 2.5s
+  };
+
+  const handleToggleSocials = () => {
+    setShowSocials(prev => !prev);
+  };
+
+  // Home button
+  const handleGoHome = () => {
+    // close other pop ups
+    setShowResume(false);
+    setShowSkills(false);
+    setShowAboutMe(false);
+    setShowSocials(false);
+    setShowProjects(false);
+
+    setShowIntro(true);
   };
 
   // open and close Resume
@@ -51,16 +67,6 @@ function App() {
     if (showProjects) { setShowProjects(false); }
 
     setShowResume(prev => !prev);
-  };
-
-  // Home button
-  const handleGoHome = () => {
-    setShowIntro(true);
-    setShowResume(false);
-    setShowSkills(false);
-    setShowAboutMe(false);
-    setShowSocials(false);
-    setShowProjects(false);
   };
 
   // open and close Skills
@@ -83,10 +89,6 @@ function App() {
     setShowAboutMe(prev => !prev);
   };
 
-  const handleToggleSocials = () => {
-    setShowSocials(prev => !prev);
-  };
-
   const handleToggleProjects = () => {
     // close other pop ups
     if (showResume) { setShowResume(false); }
@@ -96,6 +98,8 @@ function App() {
     setShowProjects(prev => !prev);
   }
   
+//////////////////////////////////////////////////////////////////////////
+
   return(
     <>
       {showIntro ? (
@@ -104,15 +108,20 @@ function App() {
         <LoadingScreen />
       ) : ( // main screen if neither
         <MainScreen 
+          onGoHome={ handleGoHome }
+
           onToggleResume={ handleToggleResume } 
           isResumeActive={ showResume }
-          onGoHome={ handleGoHome }
+
           onToggleSkills={ handleToggleSkills }
-          isSkillsActive={ showSkills }          
+          isSkillsActive={ showSkills } 
+
           onToggleAboutMe={ handleToggleAboutMe }
           isAboutMeActive={ showAboutMe }
+
           onToggleSocials={ handleToggleSocials }
           isSocialsActive={ showSocials }
+
           onToggleProjects={ handleToggleProjects }
           isProjectsActive={ showProjects }
         />
