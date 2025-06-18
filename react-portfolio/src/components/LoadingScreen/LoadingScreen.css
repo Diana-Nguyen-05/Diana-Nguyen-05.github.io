@@ -11,8 +11,8 @@
 }
 
 .LoadingBarContainer {
-    width: 350px;
-    height: 25px;
+    width: 23vw;
+    height: 2.5vh;
     border: 3px solid black;
     border-radius: 5px;
     overflow: hidden; /*so fill doesnt go out of borders*/
@@ -36,7 +36,7 @@
 
 .LoadingScreenText {
     margin-bottom: 0;
-    font-size: 1em;
+    font-size: clamp(3vh, 2.5vw, 2.5vw);
     animation: pulseText 0.5s infinite alternate;
 }
 
