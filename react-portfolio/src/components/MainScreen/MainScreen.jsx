@@ -16,13 +16,13 @@ function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, 
         {type: 'resume', content: 'Resume'},
         {type: 'empty'},
         {type: 'empty'},
-        {type: 'empty'},
-        {type: 'empty'},
-        {type: 'empty'},
-        {type: 'empty'},
-        {type: 'empty'},
-        {type: 'empty'},
-        {type: 'empty'}
+        {type: 'empty', class: 'hideP'},
+        {type: 'empty', class: 'hideP'},
+        {type: 'empty', class: 'hideT'},
+        {type: 'empty', class: 'hideT'},
+        {type: 'empty', class: 'hideT'},
+        {type: 'empty', class: 'hideT'},
+        {type: 'empty',  class: 'hideT'}
     ]
 
     return (
@@ -62,7 +62,10 @@ function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, 
                 {inventorySlots.map((slot, index) => (
                     <div
                         key={index} 
-                        className={`InventorySlot ${slot.type == 'resume' ? 'resumeSlot' : ''} ${slot.type == 'resume' && isResumeActive ? 'ActiveSlot' : ''}`}
+                        className={`InventorySlot 
+                            ${slot.type == 'resume' ? 'resumeSlot' : ''} 
+                            ${slot.type == 'resume' && isResumeActive ? 'ActiveSlot' : ''}
+                            ${slot.class || ''} `}
                         onClick={slot.type=='resume' ? onToggleResume : null}
                     >
                         {slot.content && (
