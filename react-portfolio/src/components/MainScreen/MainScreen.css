@@ -57,7 +57,7 @@
 .AboutMeButtonContainer {
     position: absolute;
     top: 5vh;
-    right: 11vw;
+    right: 11.5vw;
 }
 
 .SkillsButtonContainer {
@@ -111,10 +111,20 @@
     .hideT {
         display: none;
     }
+    .AboutMeButtonContainer {
+        position: absolute;
+        top: 5vh;
+        right: 15vw;
+    }
 }
 @media (max-width: 480px) {
     .hideP {
         display: none;
+    }
+    .AboutMeButtonContainer {
+        position: absolute;
+        top: 5vh;
+        right: 18.5vw;
     }
 }
 
