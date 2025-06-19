@@ -20,7 +20,7 @@
     height: 2.5vh;
     border: 3px solid black;
     border-radius: 5px;
-    box-shadow: 0 0 5px 1px black;
+    box-shadow: 0 0 15px 1px black;
     overflow: hidden;
 }
 
