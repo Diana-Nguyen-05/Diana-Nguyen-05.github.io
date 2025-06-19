@@ -20,7 +20,7 @@
 }
 
 .MainText {  
-    font-size: clamp(4.5vh, 4.5vw, 4.5vw);
+    font-size: clamp(3vh, 4.5vw, 4.5vw);
     line-height: 0.5;
     color: white;
     text-align: center;
@@ -39,7 +39,6 @@
     text-align: center;
     color: white;
     margin-bottom: 0;
-    margin-top: 2.5vh;
 }
 
 .HomeButtonContainer {
@@ -57,7 +56,7 @@
 .AboutMeButtonContainer {
     position: absolute;
     top: 5vh;
-    right: 11.5vw;
+    right: 11vw;
 }
 
 .SkillsButtonContainer {
@@ -107,44 +106,54 @@
     font-size: clamp(1.5vh, 1.2vw, 1.2vw);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
+    .InventoryBarContainer {
+        width: 50vw;
+        height: 11vh;
+    }
+    .InventorySlot {
+        width: 7vw;
+        height: 8.5vh;
+    }
     .hideT {
         display: none;
     }
     .AboutMeButtonContainer {
-        position: absolute;
         top: 5vh;
-        right: 15vw;
+        right: 12vw;
     }
     .SkillsButtonContainer {
-        position: absolute;
-        bottom: 20.5vh;
-        left: 17vw;
+        bottom: 21vh;
+        left: 18vw;
     }
     .ProjectsButtonContainer {
-        position: absolute;
-        bottom: 20.5vh;
-        right: 17vw;
+        bottom: 21vh;
+        right: 18vw;
     }
 }
 @media (max-width: 650px) {
+    .InventoryBarContainer {
+        width: 60vw;
+        height: 8vh;
+    }
+    .InventorySlot {
+        height: 5vh;
+        width: 11vw;
+    }
     .hideP {
         display: none;
     }
     .AboutMeButtonContainer {
-        position: absolute;
         top: 5vh;
         right: 18.5vw;
     }
     .SkillsButtonContainer {
-        position: absolute;
-        bottom: 20.3vh;
-        left: 15.5vw;
+        bottom: 20vh;
+        left: 8vw;
     }
     .ProjectsButtonContainer {
-        position: absolute;
-        bottom: 20.3vh;
-        right: 15.5vw;
+        bottom: 20vh;
+        right: 8vw;
     }
 }
 
@@ -155,7 +164,7 @@
 
 .resumeSlot.ActiveSlot {
     background-color: rgb(117, 117, 117);
-    font-size: clamp(1.5vh, 1.2vw, 1.2vw);
+    font-size: clamp(1.7vh, 1.2vw, 1.2vw);
 }
 
 .slotContent {

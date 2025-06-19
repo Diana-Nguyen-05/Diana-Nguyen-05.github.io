@@ -2,7 +2,7 @@
 .ProjectCard {
     background-color: rgb(92, 92, 92);
     border-radius: 10px;
-    padding: 1em;
+    padding: 1.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
 }
 
 .ProjectCard h3 {
-    font-size: 2em;
+    font-size: clamp(1.8vh, 1.5vw, 1.5vw);
     color: rgb(182, 255, 251);
     margin-top: 0;
     margin-bottom: -0.05em;
@@ -20,21 +20,21 @@
 
 .ProjectImage {
     max-width: 90%;
-    height: 11em;
+    height: 15vh;
     object-fit: contain;
     border-radius: 5px;
     margin-bottom: -0.7em;
 }
 
 .ProjectDescription {
-    font-size: 1.3em;
+    font-size: clamp(1.5vh, 1vw, 1vw);
     line-height: 1.5;
     margin-bottom: 0.1em;
     flex-grow: 1;
 }
 
 .ProjectTechnologies h4 {
-    font-size: 1.5em;
+    font-size: clamp(1.7vh, 1.3vw, 1.3vw);
     margin-top: 0;
     margin-bottom: -0.05em;
     color: rgb(185, 245, 245);
@@ -51,8 +51,8 @@
 }
 
 .ProjectTechnologies li {
-    font-size: 1.2em;
-    margin-bottom: -0.5em;
+    font-size: clamp(1.5vh, 1vw, 1vw);
+    margin-bottom: -0.7vh;
 }
 
 .ProkectLinks {
@@ -66,8 +66,32 @@
 
 .ProjectLink {
     display: inline-block;
-    padding: 5px 15px;
-    font-size: 1.3em;
+    padding: 0.5vh 0.8vw;
+    font-size: clamp(1.4vh, 1.1vw, 1.1vw);
     border-radius: 10px;
     border: 2px solid black;
+}
+
+@media (max-width: 1100px) {
+    .ProjectCard h3 {
+        margin-bottom: 1vh;
+    }
+    .ProjectImage {
+        margin-bottom: 0.5vh;
+    }
+    .ProjectDescription{
+        margin-bottom: 0.5vh;
+    } 
+}
+@media (max-width: 650px) {
+    .ProjectCard h3 {
+        margin-bottom: 0.5vh;
+    }
+    .ProjectImage {
+        margin-bottom: -1vh;
+        line-height: 0.05;
+    }
+    .ProjectDescription {
+        margin-bottom: 1vh;;
+    }
 }
