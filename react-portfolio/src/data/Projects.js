@@ -27,6 +27,23 @@ const projects = [
     githubLink: 'https://github.com/Diana-Nguyen-05/Panorama-Creator.git',
     LiveDemoLink: null,
    },
+   {
+      id: 'project4',
+      title: 'Calculator Website',
+      description: 'The classic calculator starter project',
+      image: '/images/Calculator.png',
+      technologies: ['Html, Css, Javascript'],
+      githubLink: 'git@github.com:Diana-Nguyen-05/Calculator-Website.git',
+      LiveDemoLink: null,
+   },
+   {
+      id: 'project5',
+      title: 'Platformer Game (In progress)',
+      description: 'Platformer game using pygame. Unfinished.',
+      image: null,
+      githubLink: null,
+      LiveDemoLink: null,
+   }
 ];
 
 export default projects;
