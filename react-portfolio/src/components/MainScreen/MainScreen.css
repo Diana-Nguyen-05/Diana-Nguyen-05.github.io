@@ -8,6 +8,13 @@
     justify-content: space-between;
     align-items: center;
     /*Add bg image here later*/
+
+    background-image: url(../public/images/MainScreen.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 1;
 }
 
 .TopSpacer {
@@ -26,7 +33,7 @@
     text-align: center;
     margin-bottom: 1vh;
     margin-top: 0;
-    text-shadow: 0 0 5px rgb(0, 0, 0);
+    text-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
 .Name {
@@ -39,45 +46,51 @@
     text-align: center;
     color: white;
     margin-bottom: 0;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
 .HomeButtonContainer {
     position: absolute;
     top: 5vh;
     left: 4vw;
+    box-shadow: 0 0 15px 1px black;
 }
 
 .SocialsButtonContainer {
     position: absolute;
     top: 5vh;
     right: 4vw;
+    box-shadow: 0 0 15px 1px black;
 }
 
 .AboutMeButtonContainer {
     position: absolute;
     top: 5vh;
     right: 11vw;
+    box-shadow: 0 0 15px 1px black;
 }
 
 .SkillsButtonContainer {
     position: absolute;
     bottom: 19.5vh;
     left: 21.5vw;
+    box-shadow: 0 0 15px 1px black;
 }
 
 .ProjectsButtonContainer {
     position: absolute;
     bottom: 19.5vh;
     right: 21.5vw;
+    box-shadow: 0 0 15px 1px black;
 }
 
 .InventoryBarContainer {
     width: 45vw;
     height: 9vh;
     background-color: rgb(71, 71, 71);
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 10px;
-    box-shadow: 0 0 5px 1px black;
+    box-shadow: 0 0 15px 1px black;
     margin-bottom: 17.5vh;
     display: flex;
     justify-content: center;
