@@ -8,6 +8,11 @@
     align-items: center;
     font-size: 3em;
     /*add bg image here later*/
+
+    background-image: url(../public/images/LoadingScreen.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .LoadingBarContainer {
@@ -15,13 +20,14 @@
     height: 2.5vh;
     border: 3px solid black;
     border-radius: 5px;
-    overflow: hidden; /*so fill doesnt go out of borders*/
+    box-shadow: 0 0 5px 1px black;
+    overflow: hidden;
 }
 
 .LoadingBarFill {
     width: 0%;
     height: 100%;
-    background-color: rgb(146, 145, 145);
+    background-color: rgb(94, 158, 196);
     animation: fillBar 2s ease forwards;
 }
 
@@ -37,6 +43,7 @@
 .LoadingScreenText {
     margin-bottom: 0;
     font-size: clamp(3vh, 2.5vw, 2.5vw);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
     animation: pulseText 0.5s infinite alternate;
 }
 
