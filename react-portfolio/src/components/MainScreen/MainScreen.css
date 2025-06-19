@@ -8,13 +8,6 @@
     justify-content: space-between;
     align-items: center;
     /*Add bg image here later*/
-
-    background-image: url(../public/images/MainScreen.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    opacity: 1;
 }
 
 .TopSpacer {

@@ -7,20 +7,10 @@
     align-items: center;
     cursor: pointer;
     /*Add bg here later*/
-
-    background-image: url(../public/images/IntroScreen.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .IntroScreenText {
     font-size: clamp(3vh, 2.5vw, 2.5vw);
     color: white;
     text-shadow: 0 0 5px black;
-    padding: 1vh 1.5vw;
-    background-color: rgb(92, 92, 92);
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 0 0 15px 1px black;
 }

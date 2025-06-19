@@ -8,11 +8,6 @@
     align-items: center;
     font-size: 3em;
     /*add bg image here later*/
-
-    background-image: url(../public/images/LoadingScreen.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .LoadingBarContainer {
