@@ -57,6 +57,11 @@ function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, 
                 <p className="Quote">Making play a profession.</p>
             </div>
 
+            {/*Help text*/}
+            <div className="Help">
+                <p className="HelpText">Click the buttons to learn more about me! Click button again to close.</p>
+            </div>
+
             {/*Inventory bar*/}
             <div className="InventoryBarContainer">
                 {inventorySlots.map((slot, index) => (

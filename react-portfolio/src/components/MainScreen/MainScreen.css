@@ -58,6 +58,23 @@
     text-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
+.Help {
+    position: absolute;
+    bottom: 10vh;
+    width: 100%; 
+    text-align: center;
+}
+.HelpText {
+    font-size: clamp(1.3vh, 1.3vw, 1.3vw);
+    color: gray;
+    animation: fadeIn 3s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
 .HomeButtonContainer {
     position: absolute;
     top: 5vh;
