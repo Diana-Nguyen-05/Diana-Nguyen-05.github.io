@@ -27,6 +27,22 @@
     margin-bottom: 1vh;
     margin-top: 0;
     text-shadow: 0 0 15px rgb(0, 0, 0);
+
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.2vw solid white;
+    box-sizing: border-box;
+    animation: typing 3s steps(24) forwards, cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
 .Name {
