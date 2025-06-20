@@ -165,6 +165,9 @@
         width: 7vw;
         height: 8.5vh;
     }
+    .Help {
+        bottom: 12vh;
+    }
     .hideT {
         display: none;
     }
@@ -189,6 +192,9 @@
     .InventorySlot {
         height: 5vh;
         width: 11vw;
+    }
+    .Help {
+        bottom: 13vh;
     }
     .hideP {
         display: none;

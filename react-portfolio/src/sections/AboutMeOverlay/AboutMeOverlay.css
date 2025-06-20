@@ -70,6 +70,10 @@
     border-radius: 10px;
 }
 
+.highlight {
+    color: rgb(140, 224, 224);
+}
+
 .AboutMeTxt p {
     margin-bottom: 1vh;
 }

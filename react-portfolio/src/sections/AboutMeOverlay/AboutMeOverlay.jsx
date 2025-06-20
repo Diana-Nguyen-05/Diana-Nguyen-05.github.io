@@ -13,7 +13,7 @@ function AboutMeOverlay() {
 
                 <div className="AboutMeTxt">
                     <p>
-                        Hello! My name's Diana, and I am a second year student at SFU, and an aspiring game developer. I am currently working towards building new projects and learning about various topics to build upon my experience. Right now, I am interested in computer graphics and vision and am looking forwards to learning more about this field!
+                        Hello! My name's Diana, and <span className="highlight">I am a second year student at SFU, and an aspiring game developer.</span> I am currently working towards building new projects and learning about various topics to build upon my experience. Right now, I am interested in computer graphics and vision and am looking forwards to learning more about this field!
                     </p>
 
                     <p>

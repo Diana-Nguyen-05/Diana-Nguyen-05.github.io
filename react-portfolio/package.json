@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -b main -r https://github.com/Diana-Nguyen-05/Diana-Nguyen-05.github.io.git"
+    "deploy": "gh-pages -d dist -b deploy -r https://github.com/Diana-Nguyen-05/Diana-Nguyen-05.github.io.git"
   },
   "dependencies": {
     "@fontsource/jersey-10": "^5.2.6",

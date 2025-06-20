@@ -15,7 +15,7 @@
 .SkillsOverlayContent {
     position: relative;
     background-color: rgb(71, 71, 71);
-    padding: 50px;
+    padding: 5vh;
     border: 3px solid black;
     border-radius: 10px;
     box-shadow: 0 0 15px 1px black;
@@ -24,17 +24,19 @@
     align-items: center;
 
     width: 45vw;
-    height: 55vh;
+    height: auto;
+    max-height: 55vh;
     bottom: 1vh;
     transform: translateY(-3.7vh);
 
     pointer-events: auto;
     box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .SkillsOverlayContent h2 {
     font-size: clamp(1.8vh, 1.9vw, 1.9vw);
-    margin-top: 0.01vh;
+    margin-top: -2vh;
     color: rgb(143, 236, 143);
 }
 
@@ -51,17 +53,19 @@
 .SkillsCategory {
     flex: 1;
     width: 8vw;
-    height: 35vh;
+    min-height: clamp(10vh, 35vh, 35vh);
     background-color: gray;
     border-radius: 10px;
-    padding: 1vh 1.5vw;
+    padding: 3vh 1.5vw;
     margin-top: -5vh;
+    overflow-y: auto;
 }
 
 .SkillsCategory h3 {
     font-size: clamp(1.5vh, 1.7vw, 1.7vw);
     color: rgb(132, 241, 255);
-    margin-top: 0.5vh;
+    margin-top: 0vh;
+    margin-bottom: 1vh;
     text-align: center;
 }
 
@@ -72,11 +76,11 @@
 }
 
 .SkillName {
-    font-size: clamp(1.9vh, 1.2vw, 1.2vw);
+    font-size: clamp(1.9vh, 1.1vw, 1.1vw);
 }
 
 .SkillIcon {
-    width: 2.5vw;
+    width: 2vw;
     height: auto;
     object-fit: contain;
     padding-right: 0.5vw;
@@ -86,7 +90,7 @@
 @media (max-width: 1100px) {
     .SkillsOverlayContent {
         width: 50vw;
-        height: 50vh;
+        height: auto;
         bottom: -5vh;
         transform: translateY(-18.5%);
     }
@@ -95,11 +99,11 @@
         margin-bottom: 3vh;
     }
     .SkillsCategory {
-        width: 39vw;
-        height: 30vh;
+        width: 25vw;
+        max-height: 5vh;
     }
     .SkillName {
-        font-size: clamp(1.5vh, 1.5vw, 1.5vw);
+        font-size: clamp(1.5vh, 1.4vw, 1.4vw);
     }
     .SkillIcon {
         width: 2vw;
@@ -113,8 +117,8 @@
         transform: translateY(-6.5vh);
     }
     .SkillsOverlayContent h2 {
-        margin-top: -6vh;
-        margin-bottom: 2vh;
+        margin-top: -3.5vh;
+        margin-bottom: 1vh;
     }
     .SkillsGrid {
         flex-direction: column;
@@ -122,14 +126,15 @@
         gap: 7vh;
     }
     .SkillsCategory h3 {
-        margin-bottom: 1.2vh;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
     }
     .SkillsCategory {
-        width: 50vw;
+        width: 39vw;
         min-height: 11.5vh;
         background-color: gray;
         border-radius: 10px;
-        padding: 0.3vh 2vw;
+        padding: 0.3vh 0.3vw;
         margin-top: -4vh;
         margin-bottom: -1vh;
         line-height: 0.8;
@@ -137,6 +142,6 @@
     .SkillIcon {
         width: 3.2vw;
         padding-right: 2vw;
-        padding-left: 16vw;
+        padding-left: 11vw;
     }
 }
