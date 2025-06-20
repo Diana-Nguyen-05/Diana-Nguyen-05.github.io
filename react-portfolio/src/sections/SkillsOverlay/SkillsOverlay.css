@@ -62,6 +62,7 @@
     font-size: clamp(1.5vh, 1.7vw, 1.7vw);
     color: rgb(132, 241, 255);
     margin-top: 0.5vh;
+    margin-bottom: 1vh;
     text-align: center;
 }
 
@@ -76,7 +77,7 @@
 }
 
 .SkillIcon {
-    width: 2.5vw;
+    width: 2vw;
     height: auto;
     object-fit: contain;
     padding-right: 0.5vw;
