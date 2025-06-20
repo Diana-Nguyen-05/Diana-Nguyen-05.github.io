@@ -65,7 +65,7 @@
     text-align: center;
 }
 .HelpText {
-    font-size: clamp(1.3vh, 1.3vw, 1.3vw);
+    font-size: clamp(1.2vh, 1.3vw, 1.3vw);
     color: gray;
     animation: fadeIn 3s ease-in forwards;
 }
@@ -168,6 +168,9 @@
     .hideT {
         display: none;
     }
+    .Help {
+        bottom: 12vh;
+    }
     .AboutMeButtonContainer {
         top: 5vh;
         right: 12vw;
@@ -192,6 +195,9 @@
     }
     .hideP {
         display: none;
+    }
+    .Help {
+        bottom: 13.5vh;
     }
     .AboutMeButtonContainer {
         top: 5vh;
