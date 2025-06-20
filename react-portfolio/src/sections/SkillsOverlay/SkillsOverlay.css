@@ -90,8 +90,7 @@
     .SkillsOverlayContent {
         width: 50vw;
         height: auto;
-        bottom: -5vh;
-        transform: translateY(-18.5%);
+        bottom: 19.5vh;
     }
     .SkillsOverlayContent h2 {
         margin-top: -3vh;

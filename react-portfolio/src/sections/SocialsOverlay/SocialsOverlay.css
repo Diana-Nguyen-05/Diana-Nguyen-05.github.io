@@ -59,12 +59,12 @@
 @media (max-width: 1100px) {
     .SocialsOverlay {
         top: 9vh;
-        right: 4.1vw;
+        right: 4.5vw;
         width: 16vw;
         height: 10vh;
     }
     .SocialsOverlayContent {
-        width: 30vw;
+        width: 17vw;
         height: 7.5vh;
     }
     .SocialIcon {
@@ -78,13 +78,12 @@
 @media (max-width: 650px) {
     .SocialsOverlay {
         top: 7vh;
-        right: 4.4vw;
-        width: 35vw;
-        height: 10vh;
+        right: 11vw;
+        height: 11vh;
     }
     .SocialsOverlayContent {
-        width: 60vw;
-        height: 6vh;
+        width: 30vw;
+        height: 7vh;
     }
     .SocialIcon {
         width: 2vh;
