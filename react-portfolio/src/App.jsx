@@ -130,7 +130,7 @@ function App() {
       {/*Good to keep onClose (even though not currently used) in case I plan on adding for example: 'press esc to close'*/}
 
       {/*Resume pop up*/}
-      {showResume && (<Resume resumePDFPath="/ResumePlaceholder.pdf" />)}
+      {showResume && (<Resume resumePDFPath="/Resume.pdf" />)}
 
       {/*Skills pop up*/}
       {showSkills && (<SkillsOverlay skills={ SkillsData } onClose={ handleToggleSkills } />)}
