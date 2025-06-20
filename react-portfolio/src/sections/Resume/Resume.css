@@ -54,6 +54,7 @@
 .ResumeDownloadButton:hover {
     background-color: rgb(117, 117, 117);
     font-size: clamp(2vh, 1.2vw, 1.2vw);
+
 }
 
 @media (max-width: 1100px) {
