@@ -62,6 +62,11 @@ function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, 
                 <p className="HelpText">Click the buttons to learn more about me! Click button again to close.</p>
             </div>
 
+            {/*Copy right*/}
+            <div className="Footer">
+                <p className="CopyRight">&copy; 2025 Diana Nguyen</p>
+            </div>
+
             {/*Inventory bar*/}
             <div className="InventoryBarContainer">
                 {inventorySlots.map((slot, index) => (
