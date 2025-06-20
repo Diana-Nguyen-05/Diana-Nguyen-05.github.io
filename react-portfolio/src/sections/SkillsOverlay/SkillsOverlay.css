@@ -13,7 +13,7 @@
 }
 
 .SkillsOverlayContent {
-    position: absolute;
+    position: fixed;
     background-color: rgb(71, 71, 71);
     padding: 5vh;
     border: 3px solid black;

@@ -13,7 +13,7 @@
 }
 
 .SocialsOverlayContent {
-    position: absolute;
+    position: fixed;
     background-color: rgb(71, 71, 71);
     padding: 1vh;
     border: 3px solid black;
