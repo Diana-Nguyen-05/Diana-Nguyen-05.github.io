@@ -70,6 +70,17 @@
     animation: fadeIn 3s ease-in forwards;
 }
 
+.Footer {
+    position: absolute;
+    bottom: 1vh;
+    text-align: center;
+}
+.CopyRight {
+    font-size: clamp(1.3vh, 1vw, 1vw);
+    margin: 0;
+    color: gray;
+}
+
 @keyframes fadeIn {
     from { opacity: 0;}
     to { opacity: 1;}
