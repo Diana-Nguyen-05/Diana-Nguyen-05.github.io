@@ -28,9 +28,9 @@ function ProjectsOverlay({ projects }) {
                 <h2>My Projects</h2>
                 
                 <div className="ProjectCarouselContainer">
-                    <button className="CarouselArrow Left" onClick={handlePrevProject}>Prev</button>
+                    <button className="CarouselArrow Left" onClick={handlePrevProject}>{"<"}</button>
                     {currentProject && <ProjectCard project={ currentProject } />}
-                    <button className="CarouselArrow Right" onClick={handleNextProject}>Next</button>
+                    <button className="CarouselArrow Right" onClick={handleNextProject}>{">"}</button>
                 </div>
 
             </div>

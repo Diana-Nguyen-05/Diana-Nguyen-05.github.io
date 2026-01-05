@@ -59,12 +59,12 @@ function MainScreen({ onToggleResume, isResumeActive, onGoHome, onToggleSkills, 
 
             {/*Help text*/}
             <div className="Help">
-                <p className="HelpText">Click the buttons to learn more about me! Click button again to close.</p>
+                <p className="HelpText">Click the buttons to learn more about me!.</p>
             </div>
 
             {/*Copy right*/}
             <div className="Footer">
-                <p className="CopyRight">&copy; 2025 Diana Nguyen</p>
+                <p className="CopyRight">&copy; 2026 Diana Nguyen</p>
             </div>
 
             {/*Inventory bar*/}

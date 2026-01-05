@@ -73,11 +73,11 @@
 }
 
 .CarouselArrow.Left {
-    left: 1.3vw;
+    left: 2vw;
 }
 
 .CarouselArrow.Right {
-    right: 1.3vw;
+    right: 2vw;
 }
 
 .CarouselArrow:hover {
