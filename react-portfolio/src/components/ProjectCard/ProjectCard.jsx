@@ -31,7 +31,7 @@ function ProjectCard({ project }) {
                     <a href={project.githubLink} className="ProjectLink GithubLink">GitHub</a>
                 )}
                 {project.LiveDemoLink && (
-                    <a href={project.LiveDemoLink} className="ProjectLink LiveDemoLink">Live Demo</a>
+                    <a href={project.LiveDemoLink} className="ProjectLink LiveDemoLink">Link</a>
                 )}
             </div>
         </div>

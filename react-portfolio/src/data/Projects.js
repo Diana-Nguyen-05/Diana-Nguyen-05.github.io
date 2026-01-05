@@ -2,12 +2,12 @@
 const projects = [
    {
     id: 'project1',
-    title: 'Snake Web Game',
-    description: 'The classic snake game developed with HTML, CSS, and JS.',
-    image: '/images/SnakeWebGame.png',
-    technologies: ['Html', 'Css', 'Javascript'],
-    githubLink: 'https://github.com/Diana-Nguyen-05/Snake-Game-Website.git',
-    LiveDemoLink: null,
+    title: 'Disaster Alert System',
+    description: 'A frontend wildfires and earthquakes tracking site designed to promote awareness and safety.',
+    image: '/images/DAS.png',
+    technologies: ['Html', 'Css', 'Typescript', 'React.ts'],
+    githubLink: null,
+    LiveDemoLink: 'https://final-project-19-leafs.onrender.com/',
    },
    {
     id: 'project2',
@@ -29,15 +29,6 @@ const projects = [
    },
    {
       id: 'project4',
-      title: 'Calculator Website',
-      description: 'The classic calculator starter project',
-      image: '/images/Calculator.png',
-      technologies: ['Html, Css, Javascript'],
-      githubLink: 'git@github.com:Diana-Nguyen-05/Calculator-Website.git',
-      LiveDemoLink: null,
-   },
-   {
-      id: 'project5',
       title: 'Platformer Game (In progress)',
       description: 'Platformer game using pygame. Unfinished.',
       image: null,

@@ -23,6 +23,7 @@ function AboutMeOverlay() {
                     <h3>Some of my relevant courses include:</h3>
                     <ul>
                         <li>cmpt 225: Data Structures and Programming</li>
+                        <li>cmpt 276: Introduction to Software Engineering</li>
                         <li>cmpt 310: Introduction to Artificial Intelligence</li>
                         <li>cmpt 361: Introduction to Visual Computing</li>
                     </ul>
